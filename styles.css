@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+section {
+  display: none; /* Cacher toutes les sections par défaut */
+}
+
+section:target {
+  display: block; /* Afficher uniquement la section ciblée */
+}
+
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Style spécifique pour chaque fonction avec des icônes SVG */
+#horloge h2::before {
+  content: url("horloge.svg");
+  margin-right: 10px;
+}
+
+#timer h2::before {
+  content: url("timer.svg");
+  margin-right: 10px;
+}
+
+#reveil h2::before {
+  content: url("reveil.svg");
+  margin-right: 10px;
+}
+
+#chronometre h2::before {
+  content: url("chronometre.svg");
+  margin-right: 10px;
+}
+
+/* Style pour la liste des réveils */
+#listeReveils {
+  list-style-type: none;
+  padding: 0;
+}
+
+#listeReveils li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#listeReveils button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#listeReveils button:hover {
+  background-color: #c0392b;
+}
